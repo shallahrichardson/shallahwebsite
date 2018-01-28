@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+    font-family: Droid Sans;
+    font-size: 1.3em;
+}
+p{
+  font-family: Roboto;
+  word-spacing:5px;
+  margin:5%;    
+}
+
+nav{
+    width: 100%;
+    margin-left:20%;
+    padding: 10px;
+    color: #430297;
+}
+
+ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+li {
+    display: inline;
+    padding:10px;
+}
+
+a{
+  text-decoration: none;
+} 
+
+li a:hover {
+    opacity:0.7 ;
+}
+
+.fa {
+  padding: 20px;
+  font-size:48px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 90%;
+  margin-left: 10%;
+  margin-top: 30px;    
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-twitter {
+  background: #430297;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #430297;
+  color: white;
+}
+
+.fa-instagram {
+  background: #430297;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #430297;
+  color: white;
+}
+    
+.fa-github{
+  background: #430297;
+  color: white;        
+    }
+
+ .fa-envelope{
+  background: #430297;
+  color: white;        
+    }
+
+.web-design, .drupal, .code{
+  margin-left:20%;
+}
+
+.fa-pencil{
+  margin-left:40%;
+    
+}
+
+.fa-drupal{
+  margin-left:35%;
+}
+
+.fa-code{
+   margin-left:30%;
+     
+}
+
+h3{
+  margin-left:35%;
+}
+
+img{
+    width:100%;
+	height:auto;
+}
+
+.pic-2 img{
+  height:215px;  
+}
+.pic-3 img{
+ height:215px;
+    
+}
+
+
+.hero{
+  background-image:url('../img/hero.png');
+  height:800px;
+  background-size: cover;    
+}
+
+#work, .footer{
+    background-color:#9999FF;
+}
+/***Full Screen***/
+
+@media screen and (min-width:980px){    
+      /**Grid Areas**/
+.hero{grid-area: hero;}
+#skills{grid-area:skills;}
+#work{grid-area:work;}
+#contact{grid-area:contact;}
+.footer{grid-area:footer;}    
+    
+    
+   .grid{
+    display:grid;
+    margin: auto;
+    grid-template-columns: repeat(9fr,3);
+    grid-auto-rows: auto;  
+    grid-template-areas: 
+        "hero hero hero"
+        "skills skills skills"
+        "work work work"
+        "contact contact contact"
+        "footer footer footer";
+}
+    /**Nested Grid Areas**/
+    .web-design{grid-area:web-design; }
+    .drupal{grid-area:drupal; }
+    .code{grid-area:code; }
+    .pic-1{grid-area:pic-1; }
+    .pic-2{grid-area:pic-2; }
+    .pic-3{grid-area:pic-3; }
+    .me{grid-area:me;}
+    .header{grid-area: header;}
+    .nav {grid-area: nav;}
+    
+    #skills, #work, #contact, .hero{
+        display: grid;
+        grid-template-columns: repeat(1fr,3);
+        grid-template-rows: auto;
+        grid-template-areas: 
+         "pic-1 pic-2 pic-3"
+        "web-design drupal code"
+        "header header nav"
+}
+    
+.header{
+  top: 10%;
+  left: 10%;
+  position: absolute;
+}
+
+.nav{
+  top:10%;
+  left: 55%;
+  position: absolute;
+  width: 100%;
+  color: #430297;    
+   
+ }
+}
